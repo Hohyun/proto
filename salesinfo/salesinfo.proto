@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/Hohyun/proto/salesinfo";
+
+package salesinfo;
+
+service SalesInfo {
+  rpc GetSalesInfo (SalesInfoRequest) returns (SalesInfoResponse) {}
+}
+
+message SalesInfoRequest {
+  string from = 1;
+  string date = 2;
+}
+
+message SalesInfoResponse {
+  string message = 1;
+}
+
