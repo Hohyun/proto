@@ -10,7 +10,7 @@ service SalesInfo {
 
 message SalesInfoRequest {
   string from = 1;
-  string date = 2;
+  string to = 2;
 }
 
 message SalesInfoResponse {
